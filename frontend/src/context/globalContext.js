@@ -1,8 +1,9 @@
 import { useUser } from "@clerk/clerk-react";
 import React, { useContext, useState } from "react";
 import axios from "axios";
+import { server } from '../environment.js';
 
-const BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000/api/v1/";
+const BASE_URL = `${server}/api/v1/`;
 
 const GlobalContext = React.createContext();
 
